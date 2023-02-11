@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+#app {
+  background-image: url("/background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  will-change: transform;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.5rem;
+  position: relative;
+  margin: 0 1rem;
+  width: 5rem;
+  align-items: center;
+  border-radius: 20%;
+  border: 5px solid black;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.537);
+  transition: all 0.07s;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 10px #ffc600;
+}
+
+.key:hover {
+  cursor: pointer;
+}
+
+kbd {
+  font-size: x-large;
+  text-transform: uppercase;
+  color: white;
+}
+
+.sound {
+  text-transform: uppercase;
+  color: gold;
+  font-size: small;
+}
